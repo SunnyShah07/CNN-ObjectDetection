@@ -1,5 +1,5 @@
 # CNN-ObjectDetection
-In this project, I used YOLO algorithm trained on [Dataset](https://www.kaggle.com/datasets/vinayakshanawad/weedcrop-image-dataset?resource=download) for object detection task with Inference on video data using Convolutional Neural Network (CNN). I used pretrained Yolov3 model which can downloaded from the official YOLO [Website](https://pjreddie.com/darknet/yolo/)
+In this project, I used YOLO algorithm trained on [Dataset](https://www.kaggle.com/datasets/vinayakshanawad/weedcrop-image-dataset?resource=download) for object detection task with Inference on video data using Convolutional Neural Network (CNN). I used pretrained Yolov5 model which can downloaded from the official YOLO [Website](https://pjreddie.com/darknet/yolo/)
 <center>Examples</center>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/130169662/230648205-b70e44ca-2d14-4398-a7ad-fbadebdf8418.png" width="400" height="400" />
@@ -12,7 +12,7 @@ To run the model, it is recommended that you have the following system requireme
 
 - A good CPU and a GPU with at least 4GB memory
 - At least 8GB of RAM
-- An active internet connection to download the YOLOv2 weights and cfg file.
+- An active internet connection to download the YOLOv5 weights and cfg file.
 
 ### Required Libraries
 
@@ -48,13 +48,5 @@ Here's an example of how the original images look:
 
 ![alt text](insert-image-url-here)
 
-### Downloading the Data
 
-To download the type of data used in this project, follow these steps:
-
-1. Click on the 'Download' button.
-2. Then click on 'Download from Figure Eight'.
-3. Next, click on 'Download Options' in the top right corner.
-4. Under 'Train_00.zip', download 'train-annotations-bbox.csv' and 'train-images-boxable.csv'.
-5. Scroll down the page to the 'Please Note' section, and click on the hyperlink in the second paragraph labeled 'You can download it here'.
 
