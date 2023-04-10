@@ -100,7 +100,4 @@ Here's an example of how the original images look:
 
 
 
-
-
-
                                        
