@@ -1,10 +1,12 @@
 # CNN-ObjectDetection
-In this project, I used YOLO algorithm trained on [Dataset](https://www.kaggle.com/datasets/vinayakshanawad/weedcrop-image-dataset?resource=download) for object detection task with Inference on video data using Convolutional Neural Network (CNN). I used pretrained Yolov5 model which can downloaded from the official YOLO [Website](https://pjreddie.com/darknet/yolo/)
+In this project, I used YOLOv8 algorithm trained on [Dataset](https://universe.roboflow.com/weed-detection-ojsbj/weed-detection-twccc) for video-object detection task specifically on a weed grass. Inference on video data using Convolutional Neural Network (CNN) and is showed using a Flask Framework. I used pretrained Yolov8 model which can be downloaded from the official YOLO [Website](https://pjreddie.com/darknet/yolo/)
 <center>Examples</center>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/130169662/230648205-b70e44ca-2d14-4398-a7ad-fbadebdf8418.png" width="400" height="400" />
   <img src="https://user-images.githubusercontent.com/130169662/230648217-ad46d4bd-7277-404a-982d-045927d49188.png" width="400" height="400" /> 
 </p>
+
+## Requirements
 
 ### System Requirements
 
@@ -12,25 +14,15 @@ To run the model, it is recommended that you have the following system requireme
 
 - A good CPU and a GPU with at least 4GB memory
 - At least 8GB of RAM
-- An active internet connection to download the YOLOv5 weights and cfg file.
+- An active internet connection to download the YOLOv8 weights, cfg file and .pt files.
 
-### Required Libraries
+### The Dataset
 
-The following Python libraries were used in the making and testing of this project, along with their version numbers:
+The [Dataset](https://universe.roboflow.com/weed-detection-ojsbj/weed-detection-twccc) used in this project is for weed detection that contains images of crops with and without weeds. The dataset contains 1,008 annotated images, where each image is labeled as either "weed" or "not weed". The images were captured using a smartphone camera and contain varying lighting conditions, angles, and backgrounds.
 
-- Python: 3.6.7
-- Numpy: 1.16.4
-- Tensorflow: 1.13.1
-- Keras: 2.2.4
-- PIL: 4.3.0
+The dataset could be used to train a machine learning model to detect weeds in crops. This could be useful for farmers to identify and remove weeds from their crops, which can help increase yield and reduce crop loss. The dataset may also be used for research purposes in the field of computer vision and image analysis.
 
-## The Dataset
-
-The dataset used in this project is the Weed Crop Image Dataset. It contains over 2822 images.
-
-### Subset
-
-Weed are annotated in YOLO v5 PyTorch format.
+Weed are annotated in YOLO v8 PyTorch format.
 
 The following pre-processing was applied to each image:
 
@@ -41,12 +33,74 @@ Equal probability of one of the following 90-degree rotations: none, clockwise, 
 Random shear of between -15° to +15° horizontally and -15° to +15° vertically
 Random brigthness adjustment of between -25 and +25 percent
 
+### Software Requiremnets
 
-### Example
+YOLOv8 requirements
+Usage: pip install -r requirements.txt
+
+Base ------------------------------------------------------------------------
+- gitpython>=3.1.30
+- matplotlib>=3.3
+- numpy>=1.18.5
+- opencv-python>=4.1.1
+- Pillow>=7.1.2
+- psutil  # system resources
+- PyYAML>=5.3.1
+- requests>=2.23.0
+- scipy>=1.4.1
+- thop>=0.1.1  # FLOPs computation
+- torch>=1.7.0  # see https://pytorch.org/get-started/locally (recommended)
+- torchvision>=0.8.1
+- tqdm>=4.64.0
+- protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
+- Flask>=2.1.0
+
+Logging ---------------------------------------------------------------------
+- tensorboard>=2.4.1
+- clearml>=1.2.0
+- comet
+
+Plotting --------------------------------------------------------------------
+- pandas>=1.1.4
+- seaborn>=0.11.0
+
+Export ----------------------------------------------------------------------
+- coremltools>=6.0  # CoreML export
+- onnx>=1.12.0  # ONNX export
+- onnx-simplifier>=0.4.1  # ONNX simplifier
+- nvidia-pyindex  # TensorRT export
+- nvidia-tensorrt  # TensorRT export
+- scikit-learn<=1.1.2  # CoreML quantization
+- tensorflow>=2.4.1  # TF exports (-cpu, -aarch64, -macos)
+- tensorflowjs>=3.9.0  # TF.js export
+- openvino-dev  # OpenVINO export
+
+Deploy ----------------------------------------------------------------------
+- setuptools>=65.5.1 # Snyk vulnerability fix
+- tritonclient[all]~=2.24.0
+
+Extras ----------------------------------------------------------------------
+- Google Collab  # interactive notebook
+- albumentations>=1.0.3
+- pycocotools>=2.0.6  # COCO mAP
+
+
+
+
+### Implmentation ScreenShot 
 
 Here's an example of how the original images look:
 
-![alt text](insert-image-url-here)
+![W1](https://user-images.githubusercontent.com/130169662/231020899-1b8fe5f0-5191-4795-a3f3-6b91dd30674d.jpeg)
+![w2](https://user-images.githubusercontent.com/130169662/231021022-a42f9d60-b49a-4a77-8521-0a54935dfcec.jpeg)
+![w3](https://user-images.githubusercontent.com/130169662/231021020-35bbdb21-3a99-4e57-9682-f3946a9ba4ef.jpeg)
+
+![w4](https://user-images.githubusercontent.com/130169662/231021019-8ae07189-a92d-4822-81d7-0239a5a14839.jpeg)
+![w5](https://user-images.githubusercontent.com/130169662/231021018-d680f208-5cc6-4ac8-89cd-2398b467a32d.jpeg)
 
 
 
+
+
+
+                                       
