@@ -84,20 +84,23 @@ Extras ----------------------------------------------------------------------
 - albumentations>=1.0.3
 - pycocotools>=2.0.6  # COCO mAP
 
-
-
-
 ### Implmentation ScreenShot 
 
 Here's an example of how the original images look:
 
-![W1](https://user-images.githubusercontent.com/130169662/231020899-1b8fe5f0-5191-4795-a3f3-6b91dd30674d.jpeg)
-![w2](https://user-images.githubusercontent.com/130169662/231021022-a42f9d60-b49a-4a77-8521-0a54935dfcec.jpeg)
-![w3](https://user-images.githubusercontent.com/130169662/231021020-35bbdb21-3a99-4e57-9682-f3946a9ba4ef.jpeg)
-
-![w4](https://user-images.githubusercontent.com/130169662/231021019-8ae07189-a92d-4822-81d7-0239a5a14839.jpeg)
-![w5](https://user-images.githubusercontent.com/130169662/231021018-d680f208-5cc6-4ac8-89cd-2398b467a32d.jpeg)
+Here the screenshots are of a Web-app created in Flask Framework, here the idea was to upload a video, run a object detection model and the download that, Even there's an option to view the history of all the videos. 
 
 
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/130169662/231020899-1b8fe5f0-5191-4795-a3f3-6b91dd30674d.jpeg" width="300" />
+  <img src="https://user-images.githubusercontent.com/130169662/231021022-a42f9d60-b49a-4a77-8521-0a54935dfcec.jpeg" width="300" />
+  <img src="https://user-images.githubusercontent.com/130169662/231021020-35bbdb21-3a99-4e57-9682-f3946a9ba4ef.jpeg" width="300" />
+</p>
 
-                                       
+This is the screenshot of an output video, where the model is detecting the weed from the other type of grass by bounding boxes. 
+
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/130169662/231021019-8ae07189-a92d-4822-81d7-0239a5a14839.jpeg" width="260" />
+  <img src="https://user-images.githubusercontent.com/130169662/231021018-d680f208-5cc6-4ac8-89cd-2398b467a32d.jpeg" width="250" />
+</p>
+
