@@ -34,10 +34,13 @@ Equal probability of one of the following 90-degree rotations: none, clockwise, 
 Random shear of between -15° to +15° horizontally and -15° to +15° vertically
 Random brigthness adjustment of between -25 and +25 percent
 
-### Software Requiremnets
+### Library Requirements
 
-YOLOv8 requirements
+YOLOv8 requirements (Run the Command in Terminal before starting anything)
 Usage: pip install -r requirements.txt
+
+Flask requirements (Run the Command in Terminal before starting anything)
+pip install Flask flask-bootstrap flask-wtf
 
 Base ------------------------------------------------------------------------
 - gitpython>=3.1.30
@@ -105,3 +108,9 @@ This is the screenshot of an output video, where the model is detecting the weed
   <img src="https://user-images.githubusercontent.com/130169662/231021018-d680f208-5cc6-4ac8-89cd-2398b467a32d.jpeg" width="250" />
 </p>
 
+## Steps to Run 
+
+1. Unzip this folder after downloading
+2. Open this file location in cmd
+3. Give command: python app.py
+4. After it generates Debugger PIN, open Chrome and link http://127.0.0.1:5000 to use it.
