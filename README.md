@@ -1,9 +1,10 @@
 # CNN-ObjectDetection
 In this project, I used YOLOv8 algorithm trained on [Dataset](https://universe.roboflow.com/weed-detection-ojsbj/weed-detection-twccc) for video-object detection task specifically on a weed grass. Inference on video data using Convolutional Neural Network (CNN) and is showed using a Flask Framework. I used pretrained Yolov8 model which can be downloaded from the official YOLO [Website](https://pjreddie.com/darknet/yolo/)
 <center>Examples</center>
+
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/130169662/230648205-b70e44ca-2d14-4398-a7ad-fbadebdf8418.png" width="400" height="400" />
-  <img src="https://user-images.githubusercontent.com/130169662/230648217-ad46d4bd-7277-404a-982d-045927d49188.png" width="400" height="400" /> 
+  <img src="https://user-images.githubusercontent.com/130169662/230648205-b70e44ca-2d14-4398-a7ad-fbadebdf8418.png" width="300" height="300" />
+  <img src="https://user-images.githubusercontent.com/130169662/230648217-ad46d4bd-7277-404a-982d-045927d49188.png" width="300" height="300" /> 
 </p>
 
 ## Requirements
