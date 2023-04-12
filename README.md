@@ -21,11 +21,6 @@ This is the screenshot of an output video, where the model is detecting the weed
   <img src="https://user-images.githubusercontent.com/130169662/231021018-d680f208-5cc6-4ac8-89cd-2398b467a32d.jpeg" width="250" />
 </p>
 
-<p float="left">
-  <img src="https://user-images.githubusercontent.com/130169662/230648205-b70e44ca-2d14-4398-a7ad-fbadebdf8418.png" width="300" height="300" />
-  <img src="https://user-images.githubusercontent.com/130169662/230648217-ad46d4bd-7277-404a-982d-045927d49188.png" width="300" height="300" /> 
-</p>
-
 
 ## Requirements
 
